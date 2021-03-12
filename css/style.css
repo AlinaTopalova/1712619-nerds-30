@@ -79,7 +79,6 @@ body {
   grid-template-rows: min-content 1fr min-content;
   -ms-flex-line-pack: start;
       align-content: start;
-  /*overflow-x: hidden;*/
 }
 
 
@@ -1842,6 +1841,8 @@ iframe {
   border-radius: 3px;
   padding-left: 14px;
   margin-right: 40px;
+  padding-top: 11px;
+  padding-bottom: 18px;
   margin-bottom: 34px;
 }
 
@@ -1868,6 +1869,8 @@ iframe {
   border: 2px solid var(--basic-grey4);
   border-radius: 3px;
   padding-left: 14px;
+  padding-top: 11px;
+  padding-bottom: 18px;
 }
 
 .message-user-email:hover {
