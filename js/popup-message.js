@@ -45,11 +45,10 @@ messageClose.addEventListener("click", function (evt) {
 });
 
 messageForm.addEventListener("submit", function (evt) {
-  if (!messageUserName.value || !messageUserEmail.value || !messageText) {
+  if (!messageUserName.value || !messageUserEmail.value || !messageText.value) {
     evt.preventDefault();
     messagePopup.classList.remove("modal-error");
-    messagePopup.offsetWidth = messagePopup.offsetWidth;
-    messagePopup.classList.add("modal-error");
+    window.requestAnimationFrame(() => messagePopup.classList.add("modal-error"));
   } else {
     if (isStorageSupport) {
       localStorage.setItem("name", messageUserName.value);
